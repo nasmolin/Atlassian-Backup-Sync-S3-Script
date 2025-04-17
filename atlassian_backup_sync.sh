@@ -13,7 +13,6 @@ HOSTNAME=$(hostname -f)
 CRON_SOURCE=$(grep -F "$0" /var/spool/cron/crontabs/root 2>/dev/null || echo "N/A")
 LOG_TAIL=$(mktemp)
 
-# Настройка путей в зависимости от сервиса
 if [[ "$SERVICE_TYPE" == "confluence" ]]; then
     BACKUP_DIR="/var/atlassian/application-data/confluence/backups"
     TMP_DIR="/tmp/confluence_backup_check"
