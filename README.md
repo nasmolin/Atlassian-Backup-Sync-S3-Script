@@ -25,8 +25,8 @@ It is assumed that scheduled backups are already configured.
 $RETENTION_DAYS="The script deletes archives older than this number of days (locally and in S3)"
 $USERS_MENTION="Usernames to mention in the Telegram channel if the script fails"
 $TELEGRAM_WEBHOOK_URL="Webhook in the format https://api.telegram.org/bot.../sendDocument"
-$TELEGRAM_CHAT_ID="Chat ID"
-
+$TELEGRAM_CHAT_ID="Telegram chat ID"
+$S3_BUCKET_NAME="S3 bucket name"
 ```
 
 ## Storage and Paths
