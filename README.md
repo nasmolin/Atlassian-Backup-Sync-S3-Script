@@ -7,10 +7,10 @@ This script uploads the latest Jira or Confluence backups to S3, checks integrit
 It is assumed that scheduled backups are already configured.
 - **Confluence** – can be configured in `Settings -> Configuration -> Backup Administration`:
     - Backup File Prefix - `backup.`
-    - Backup File Date Pattern - `YYYY-MM-DD_HH-MM`
+    - Backup File Date Pattern - `YYYY-MM-dd_HH-MM`
     - Backup Path - `/var/atlassian/application-data/confluence/backups`
 - **Jira** – can be configured in `Settings -> Advanced -> Services -> Backup Service`:
-    - Date format: `YYYY-MM-DD_HH-MM`
+    - Date format: `YYYY-MM-dd_HH-MM`
     - (opt) Schedule: `Daily`
     - (opt) Interval: `once per day`
 
