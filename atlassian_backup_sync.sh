@@ -73,7 +73,7 @@ cleanup() {
     rm -f "$LOG_TAIL"
 }
 trap cleanup EXIT
-trap 'STATUS="ERROR"; MESSAGE="Unexpected error on line $LINENO"' ERR
+trap 'STATUS="ERROR"; MESSAGE="Unexpected error on line $LINENO (command: $BASH_COMMAND)"' ERR
 
 log "INFO" "${SERVICE_TYPE}-backup-to-s3 job started"
 
